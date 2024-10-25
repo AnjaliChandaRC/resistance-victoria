@@ -49,7 +49,7 @@ $('.world-game-slider').slick({
   infinite: true,
   variableWidth: true,
   speed: 300,
-  slidesToShow: 2,
+  slidesToShow: 1,
   slidesToScroll: 1,
   centerMode: true,
   variableWidth: true,

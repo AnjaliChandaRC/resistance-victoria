@@ -258,6 +258,94 @@ a {
 
 /* ===============WORLD GAME ============ */
 /* ======== FIRST SLIDER  */
+
+/*  */
+
+.world-game-slider .slick-dots li button:before {
+  opacity: 0 !important;
+}
+
+.world-game-slider .slick-dots li {
+  transition: 0.3s !important;
+}
+
+.world-game-slider .slick-dots {
+  right: 0% !important;
+  bottom: -10% !important;
+}
+
+.world-game-slider .slick-dots li {
+  background-color: #dde0e4;
+  border-radius: 50%;
+}
+
+.world-game-slider .slick-dots .slick-active {
+  width: 45px;
+  background-color: blue;
+  border-radius: 10px;
+}
+
+
+.world-game-slider .slick-dots {
+  display: flex;
+  margin-top: 10px;
+  bottom: -70px;
+  width: 55.5%;
+}
+
+.world-game-slider .slick-dots li button:before {
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 0.25;
+  color: transparent !important;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.world-game-slider .slick-list {
+  overflow: visible;
+  padding: 0 20% 0 0;
+  position: relative;
+  z-index: -1;
+}
+
+.world-game-slider .slick-list::after {
+  content: " ";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 4000px;
+  right: 100%;
+  background-color: var(--white);
+}
+
+.world-game-slider .slick-dots {
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+  z-index: 5;
+}
+
 .world-game-heading-box {
   max-width: 632px;
 
@@ -272,10 +360,6 @@ a {
 
 .world-game-slider {
   margin-top: 51px;
-
-  ul li {
-    display: none;
-  }
 
   .slick-list .slick-track {
     display: flex !important;
@@ -293,7 +377,7 @@ a {
 .center-text-div {
   width: 100%;
   min-height: 25%;
-  bottom: 0;
+  bottom: -0.5%;
   background-color: rgba(0, 0, 0, 0.378);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
@@ -680,4 +764,26 @@ a {
     }
   }
 
+  .world-game-slider .slick-dots {
+    right: 5% !important;
+    bottom: -15% !important;  
+  }
+  .world-game-slider .slick-dots li button:before {
+    width: 15px;
+    height: 15px;
+    content: "•";
+  }
+  .world-game-slider .slick-dots .slick-active {
+    width: 25px !important;
+    background-color: blue;
+    border-radius: 10px;
+  }
+  .world-game-slider .slick-dots li {
+    height: 15px !important;
+    width: 15px !important;
+  }
+  .center-text-div{
+    bottom: -2.5%;
+  }
+  
 }
