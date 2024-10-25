@@ -137,9 +137,11 @@ a {
 .underline_hover {
   position: relative;
 }
+
 .translatey_hover img:hover {
   transform: translateY(-8px);
 }
+
 .underline_hover::after {
   width: 0;
   height: 2px;
@@ -211,6 +213,7 @@ a {
 .main_top_bg {
   z-index: 1;
 }
+
 .main_top_bg video {
   object-fit: cover;
   z-index: -2;
@@ -251,6 +254,66 @@ a {
 
 .nav_login_btn:hover {
   color: var(--color-white) !important;
+}
+
+/* ===============WORLD GAME ============ */
+.world-game-slider-text {
+  margin-top: 27px;
+}
+
+.world-game-slider .slick-list .slick-track {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.world-game-slider .slick-list .slick-track .slick-slide p {
+  opacity: 0;
+}
+
+.world-game-slider .slick-list .slick-track .slick-slide img {
+  max-width: 230px;
+  height: 230px;
+  opacity: 30%;
+}
+
+.world-game-slider .slick-list .slick-track .slick-current img {
+  max-width: 382px;
+  height: 457px;
+  opacity: 100%;
+}
+
+.world-game-slider .slick-list .slick-track .slick-current p {
+  opacity: 100%;
+}
+
+.world-game-slider {
+
+  .slick-next {
+    display: none;
+  }
+
+  .slick-prev {
+    display: none;
+  }
+
+  ul li {
+    display: none;
+  }
+}
+
+.ml-150 {
+  margin-left: 150px;
+}
+
+.world-game-arrow {
+  gap: 35px;
+  right: 40%;
+  bottom: 19%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 /*============ FAQs CSS START ============*/
@@ -518,6 +581,32 @@ a {
     max-width: 250px;
     top: -130px;
   }
+
+  /* WORLD GAME SLIDER */
+  .world-game-slider .slick-list .slick-track .slick-current img {
+    max-width: 350px;
+    height: 400px;
+    opacity: 100%;
+  }
+
+  .world-game-arrow {
+    bottom: 20%;
+    right: 19%;
+  }
+
+}
+
+@media (max-width:1024.98px) {
+  .ml-lg-0 {
+    margin-left: 0;
+  }
+  .container-modify{
+    max-width: 936px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -525,9 +614,27 @@ a {
     padding-left: 24px;
     padding-right: 20px !important;
   }
+
+  /* WORLD GAME SLIDER */
+
+  .world-game-slider .slick-list .slick-track .slick-current img {
+    max-width: 320px;
+    height: 360px;
+    opacity: 100%;
+  }
+
+  .world-game-arrow {
+    bottom: 21%;
+    right: 5%;
+  }
 }
 
 @media (max-width: 767.98px) {
+  .world-game-arrow {
+    right: 5%;
+    bottom: 25%;
+  }
+
   .faq_gradient {
     max-width: 190px;
   }
@@ -553,5 +660,24 @@ a {
 
   .accordion-button::after {
     max-width: 10x;
+  }
+
+  /* WORLD GAME */
+  .world-game-slider .slick-list .slick-track .slick-current img {
+    min-width: 210px;
+    min-height: 240px;
+    max-height: 300px;
+    max-width: 270px;
+  }
+
+  .next{
+    width: 30px;
+    height: 10px;
+  }
+  .prev{
+    height: 10px;
+  }
+  .world-game-arrow {
+    bottom: 11%;
   }
 }
