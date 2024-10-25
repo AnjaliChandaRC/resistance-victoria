@@ -1,0 +1,171 @@
+.about-para {
+    line-height: 25.15px;
+}
+
+.join-para {
+    line-height: 21.79px;
+    max-width: 570px;
+}
+
+.z-minus-one {
+    z-index: -1;
+}
+
+.z-5 {
+    z-index: 5;
+}
+
+.about-blur-img {
+    max-width: 710px;
+    left: 10px;
+    top: 50px;
+    filter: blur(30px);
+}
+
+.text-transparent {
+    color: transparent;
+}
+
+.mw-120 {
+    max-width: 120px;
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+
+.about-side-img {
+    bottom: -68%;
+    z-index: 1;
+}
+
+.join-resistance {
+    border: 3px solid var(--sky-blue);
+    border-radius: 10px;
+    background-color: var(--navy-blue);
+}
+
+.join-side-img {
+    right: 0;
+    top: 220px;
+    max-width: 406px;
+    z-index: -1;
+}
+
+.op-07 {
+    opacity: .7;
+}
+
+.custom-border-top {
+    border-top: 0.5px solid var(--sky-blue);
+}
+
+.join-section {
+    background-image: url("../img/png/resistance-img.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: -2px 0;
+    z-index: 1;
+}
+
+.footer-section {
+    background-image: url("../img/png/footer.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.join-mobile-img img {
+    max-width: 334px;
+}
+
+@media(min-width:1600px) and (max-width:1800px) {
+    .about-blur-img {
+        left: 3%;
+    }
+}
+
+@media (max-width:1299.98px) {
+    .about-blur-img {
+        left: 10px;
+        bottom: -260px;
+    }
+
+    .about-side-img {
+        max-width: 400px;
+        bottom: -84%;
+    }
+
+    .join-side-img {
+        top: 390px;
+        max-width: 300px;
+    }
+}
+
+@media (max-width:1199.98px) {
+    .join-mobile-img img {
+        max-width: 260px;
+    }
+}
+
+@media (max-width:991.98px) {
+    .about-side-img {
+        bottom: -81%;
+    }
+
+    .join-mobile-img {
+        position: relative !important;
+    }
+
+    .join-mobile-img img {
+        width: 100%;
+    }
+
+    .join-side-img {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .about-blur-img {
+        left: 20px;
+        top: 190px;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .about-section {
+        overflow: hidden;
+    }
+
+    .about-para {
+        line-height: unset;
+    }
+
+    .join-para {
+        line-height: unset;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .about-side-img {
+        max-width: 250px;
+        bottom: -44%;
+    }
+
+    .about_mobile_img,
+    .join-mobile-img img {
+        max-width: 260px;
+    }
+
+    .join-resistance {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+@media (min-width:1600px) {
+    .join-para {
+        max-width: 770px;
+    }
+
+}

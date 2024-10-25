@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;700&display=swap");
+
+body,
+html {
+  background-color: var(--navy-blue);
+  font-family: "Oswald", sans-serif !important;
+  color: var(--color-white) !important;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.ff-open-sans {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+:root {
+  --font-xs: 12px;
+  --font-sm: 16px;
+  --font-md: 20px;
+  --font-lg: 48px;
+  --font-xl: 80px;
+  --color-white: #fff;
+  --color-black: #000;
+  --navy-blue: #070d37;
+  --sky-blue: #39c6fd;
+}
+
+@media (max-width: 1199.98px) {
+  :root {
+    --font-sm: 15px;
+    --font-md: 18px;
+    --font-lg: 42px;
+    --font-xl: 70px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  :root {
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-lg: 36px;
+    --font-xl: 56px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    --font-sm: 13px;
+    --font-lg: 28px;
+    --font-xl: 48px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  :root {
+    --font-sm: 12px;
+    --font-md: 15px;
+    --font-lg: 24px;
+    --font-xl: 36px;
+  }
+}
+
+@media (max-width: 374.98px) {
+  :root {
+    --font-sm: 11px;
+    --font-md: 14px;
+  }
+}
+
+.font-xs {
+  font-size: var(--font-xs);
+}
+
+.font-sm {
+  font-size: var(--font-sm);
+}
+
+.font-md {
+  font-size: var(--font-md);
+}
+
+.font-lg {
+  font-size: var(--font-lg);
+}
+
+.font-xl {
+  font-size: var(--font-xl);
+}
+
+.color-white {
+  color: var(--color-white);
+}
+
+.color-black {
+  color: var(--color-black);
+}
+
+.color-skyblue {
+  color: var(--sky-blue);
+}
+
+.bg-skyblue {
+  background-color: var(--sky-blue);
+}
+
+.color-navy-blue {
+  color: var(--navy-blue);
+}
+
+.bg-navy-blue {
+  background-color: var(--navy-blue);
+}
+
+.heading {
+  font-size: var(--font-lg);
+  font-weight: 400;
+}
+
+.sub-heading {
+  font-size: var(--font-md);
+  font-weight: 700;
+}
+
+.para {
+  font-size: var(--font-sm);
+  font-weight: 400;
+  color: var(--color-white) !important;
+}
+
+.transition_03s {
+  transition: all 0.3s ease-in-out;
+}
+
+.underline_hover {
+  position: relative;
+}
+.translatey_hover img:hover {
+  transform: translateY(-8px);
+}
+.underline_hover::after {
+  width: 0;
+  height: 2px;
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  background-color: var(--color-white);
+  transition: all 0.3s ease-in-out;
+}
+
+.underline_hover:hover::after {
+  width: 100%;
+}
+
+/* ============================ BACK TO TOP CSS START ============================ */
+#scroll {
+  position: fixed;
+  right: 2%;
+  bottom: 3%;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  display: none;
+  border-radius: 50%;
+  background-color: var(--color-black);
+  border: 1.6px solid var(--sky-blue);
+  -webkit-animation: up-down 2.5s ease-in-out infinite;
+  animation: up-down 2.5s ease-in-out infinite;
+  z-index: 10;
+}
+
+@-webkit-keyframes up-down {
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+#scroll span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -12px;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-bottom-color: var(--color-white);
+}
+
+#scroll:hover {
+  -webkit-box-shadow: 0 0 17px rgba(0, 0, 0, 0.547);
+  box-shadow: 0 0 17px rgba(0, 0, 0, 0.547);
+}
+
+#scroll:hover::after {
+  height: 100%;
+}
+
+.main_top_bg {
+  z-index: 1;
+}
+.main_top_bg video {
+  object-fit: cover;
+  z-index: -2;
+}
+
+.hero-section {
+  position: relative;
+  z-index: 2;
+}
+
+.main_top_bg::after {
+  content: "";
+  height: 100%;
+  width: 101%;
+  position: absolute;
+  top: 0;
+  left: -3px;
+  background-image: url("../img/png/hero_after.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.hero_btm_blur {
+  bottom: -1px;
+}
+
+.sign_up_btn:hover {
+  box-shadow: inset 300px 0 0 var(--color-white) !important;
+}
+
+.nav_btn {
+  padding: 8px 20px;
+  font-weight: 700;
+  border: 1px solid var(--sky-blue);
+  border-radius: 4px;
+}
+
+.nav_login_btn:hover {
+  color: var(--color-white) !important;
+}
+
+/*============ FAQs CSS START ============*/
+.faq_gradient {
+  top: -150px;
+  z-index: -1;
+}
+
+.faqs {
+  background-image: url("../img/png/faq_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.accordion-button {
+  padding: 0 !important;
+}
+
+.accordion-body {
+  padding-right: 150px !important;
+  padding-top: 12px !important;
+  padding-left: 30px;
+  padding-bottom: 0;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  color: var(--color-white);
+  font-size: var(--font-md);
+  font-weight: 700;
+}
+
+.accordion-item {
+  padding-bottom: 24px;
+  padding-top: 52px;
+  position: relative;
+}
+
+.accordion-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: #39c6fd;
+}
+
+.accordion-item,
+.accordion-button {
+  background-color: transparent !important;
+  border: 0;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../img/svg/minus_icon.svg");
+  transform: rotate(0);
+  background-position: center;
+  background-size: contain;
+}
+
+.accordion-button::after {
+  background-image: url("../img/svg/arw_icon.svg");
+  background-position: center;
+  background-size: contain;
+}
+
+.testing:before,
+.testing:after {
+  content: "SIGN UP";
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  width: 100%;
+  -webkit-clip: rect(0px, 0px, 0px, 0px);
+  clip: rect(0px, 0px, 0px, 0px);
+  background: #fff;
+  color: #000;
+}
+
+.nav_login_btn::before,
+.nav_login_btn::after {
+  content: "LOGIN";
+  position: absolute;
+  top: -2px;
+  white-space: nowrap;
+  padding: 8px 30px;
+  left: -2px;
+  width: 100%;
+  -webkit-clip: rect(0px, 0px, 0px, 0px);
+  clip: rect(0px, 0px, 0px, 0px);
+  background: #fff;
+  color: #000;
+}
+
+.join_btn::before,
+.join_btn::after {
+  content: "JOIN NOW" !important;
+  position: absolute;
+  top: 0px;
+  white-space: nowrap;
+  padding: 8px 30px;
+  left: 0px;
+  width: 100%;
+  -webkit-clip: rect(0px, 0px, 0px, 0px);
+  clip: rect(0px, 0px, 0px, 0px);
+  background: #fff;
+  color: #000;
+}
+
+.hero_btn::before,
+.hero_btn::after {
+  content: "JOIN THE RESISTANT";
+  position: absolute;
+  top: 0px;
+  white-space: nowrap;
+  padding: 8px 30px;
+  left: 0px;
+  width: 100%;
+  -webkit-clip: rect(0px, 0px, 0px, 0px);
+  clip: rect(0px, 0px, 0px, 0px);
+  background: #fff;
+  color: #000;
+}
+
+.testing:before {
+  left: -5px;
+  top: -2px;
+  text-shadow: 2px 0 #fff;
+  box-shadow: 2px 0 #fff;
+}
+
+.testing:after {
+  left: 5px;
+  bottom: -2px;
+  text-shadow: -1px 0 #fff;
+  box-shadow: -1px 0 #fff;
+}
+
+.testing:hover {
+  background: white;
+  color: black;
+}
+
+.join_btn:hover:before,
+.nav_login_btn:hover:before,
+.hero_btn:hover:before,
+.testing:hover:before {
+  animation: glitch-test 1.5s infinite linear alternate-reverse;
+}
+
+.testing:hover:after {
+  animation: glitch-test 1.5s infinite linear alternate;
+}
+
+@keyframes glitch-test {
+  0% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+
+  5.88235% {
+    clip: rect(0px, 600px, 0px, 0px);
+  }
+
+  11.76471% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+
+  17.64706% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+
+  23.52941% {
+    clip: rect(100px, 600px, 100px, 0px);
+  }
+
+  29.41176% {
+    clip: rect(0px, 600px, 600px, 0px);
+  }
+
+  35.29412% {
+    clip: rect(100px, 600px, 0px, 0px);
+  }
+
+  41.17647% {
+    clip: rect(0px, 600px, 600px, 0px);
+  }
+
+  47.05882% {
+    clip: rect(100px, 600px, 0px, 0px);
+  }
+
+  52.94118% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+
+  58.82353% {
+    clip: rect(100px, 450px, 100px, 0px);
+  }
+
+  64.70588% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+
+  70.58824% {
+    clip: rect(100px, 450px, 100px, 0px);
+  }
+
+  76.47059% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+
+  82.35294% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+
+  88.23529% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+
+  94.11765% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+
+  100% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1599.98px) {
+  .container_modified {
+    max-width: 1140px !important;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .faq_gradient {
+    max-width: 350px;
+    top: -130px;
+  }
+
+  .accordion-body {
+    padding-right: 50px !important;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .accordion-item {
+    padding-top: 30px !important;
+  }
+
+  .faq_gradient {
+    max-width: 250px;
+    top: -130px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .accordion-body {
+    padding-left: 24px;
+    padding-right: 20px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .faq_gradient {
+    max-width: 190px;
+  }
+
+  .accordion-body {
+    padding-right: 0 !important;
+  }
+
+  .accordion-button::after {
+    max-width: 15px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .accordion-item {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .accordion-body {
+    padding-left: 0;
+  }
+
+  .accordion-button::after {
+    max-width: 10x;
+  }
+}
