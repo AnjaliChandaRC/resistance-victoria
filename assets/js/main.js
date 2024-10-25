@@ -50,8 +50,10 @@ $('.world-game-slider').slick({
   speed: 300,
   slidesToShow: 2,
   slidesToScroll: 1,
+  centerMode: true,
+  variableWidth: true,
   // autoplay: true,
-  // autoplaySpeed: 2000,
+  // autoplaySpeed: 1000,
   nextArrow: ".next",
   prevArrow: ".prev",
   responsive: [
