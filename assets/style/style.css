@@ -8,6 +8,10 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  overflow-y: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -359,6 +363,8 @@ a {
 }
 
 .world-game-slider {
+  max-width: 1920px;
+  margin: auto;
   margin-top: 51px;
 
   .slick-list .slick-track {
