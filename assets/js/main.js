@@ -41,6 +41,7 @@ function topFunction() {
 }
 
 document.getElementById("vid").play();
+
 // YOUR WORLD GAME BOARD SLICK SLIDER 
 
 $('.world-game-slider').slick({
