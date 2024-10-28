@@ -329,7 +329,15 @@ a {
 .world-game-img-description {
   font-size: 22px;
 }
-
+.world-game-img-div{
+  overflow: hidden;
+  img{
+    transition: all 300ms;
+  }
+}
+.world-game-img-div:hover .world-game-img{
+  scale: 1.1;
+}
 /*============ FAQs CSS START ============*/
 .faq_gradient {
   top: -150px;
