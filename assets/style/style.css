@@ -333,6 +333,7 @@ a {
   overflow: hidden;
   img{
     transition: all 300ms;
+    cursor: pointer;
   }
 }
 .world-game-img-div:hover .world-game-img{
