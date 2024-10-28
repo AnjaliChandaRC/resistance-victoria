@@ -52,7 +52,7 @@ $('.world-game-slider').slick({
   centerMode: true,
   variableWidth: true,
   autoplay: true,
-  autoplaySpeed: 1000,
+  autoplaySpeed: 3000,
   nextArrow: ".next",
   prevArrow: ".prev",
 });
