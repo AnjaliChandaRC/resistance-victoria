@@ -48,7 +48,7 @@ $('.world-game-slider').slick({
   dots: true,
   infinite: true,
   variableWidth: true,
-  speed: 300,
+  speed: 1000,
   slidesToShow: 1,
   slidesToScroll: 1,
   centerMode: true,
