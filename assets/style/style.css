@@ -339,6 +339,12 @@ a {
   }
 }
 
+.world-game-img{
+  object-fit: cover;
+  width: 494px;
+  height: 461px;
+}
+
 .world-game-img-div:hover .world-game-img{
   scale: 1.1;
 }
@@ -697,6 +703,10 @@ a {
   .world-game-img-description {
     font-size: 18px;
   }
+  .world-game-img{
+    width: 450px;
+    height: 420px;
+  }
 
   /* SLIDER ARROWS */
   .left-arrow , .right-arrow {
@@ -751,6 +761,7 @@ a {
       }
     }
   }
+
 
   .world-game-slider .slick-dots {
     bottom: -26% !important;
@@ -807,5 +818,9 @@ a {
   .world-game-slider .slick-dots li {
     height: 15px !important;
     width: 15px !important;
+  }
+  .world-game-img{
+    width: 350px;
+    height: 324px;
   }
 }
