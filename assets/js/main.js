@@ -3,6 +3,7 @@ AOS.init({
   once: true,
   duration: 1500,
 });
+
 // AUTOMATIC-YEAR-CHANGER
 const d = new Date();
 document.getElementById("year-changer").innerHTML = d.getFullYear();
@@ -34,21 +35,19 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
+
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
 document.getElementById("vid").play();
 
-// YOUR WORLD GAME BOARD SLICK SLIDER 
+// YOUR WORLD GAME BOARD SLICK SLIDER JS CODE
 $('.world-game-slider').slick({
   dots: true,
   infinite: true,
   speed: 1000,
-  nextArrow: ".prev",
-  prevArrow: ".next",
   slidesToShow: 1,
   slidesToScroll: 1,
   centerMode: true,

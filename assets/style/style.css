@@ -262,7 +262,8 @@ a {
   color: var(--color-white) !important;
 }
 
-/* ===============YOUR WORLD GAME BOARD ============ */
+/* ===============YOUR WORLD GAME BOARD CSS CODE============ */
+
 .world-game-slider .slick-dots li {
   transition: 0.3s !important;
 }
@@ -311,25 +312,26 @@ a {
     }
   }
 }
+
 /* SLIDER ARROWS */
 .left-arrow{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  top: 50%;
+  top: 52%;
   transform: translate(0, -50%);
   cursor: pointer;
-  left: 50px !important;
 }
+
 .right-arrow{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  top: 50%;
+  top: 52%;
   transform: translate(0, -50%);
   cursor: pointer;
-  right: 50px !important;
 }
+
 .rotate-180{
   transform: rotate(180deg);  
 }
@@ -351,6 +353,7 @@ a {
 .world-game-img-description {
   font-size: 22px;
 }
+
 .world-game-img-div{
   overflow: hidden;
   img{
@@ -358,9 +361,11 @@ a {
     cursor: pointer;
   }
 }
+
 .world-game-img-div:hover .world-game-img{
   scale: 1.1;
 }
+
 /*============ FAQs CSS START ============*/
 .faq_gradient {
   top: -150px;
@@ -644,8 +649,6 @@ a {
   right: 25px !important;
 }
 
-
-
 @media (max-width: 991.98px) {
   .accordion-body {
     padding-left: 24px;
@@ -676,20 +679,23 @@ a {
   .world-game-img-description {
     font-size: 18px;
   }
+
   /* SLIDER ARROWS */
   .left-arrow , .right-arrow {
-  top: 57% !important;
-    width: 40px !important;
-    height: 40px !important;
+  top: 60% !important;
+    width: 35px !important;
+    height: 35px !important;
     padding: 4px !important;
     svg{
-      width: 25px;
-      height: 25px;
+      width: 20px;
+      height: 20px;
     }
   }
+
   .left-arrow{
     left: 15px !important;
   }
+
   .right-arrow{
     right: 15px !important;
   }
@@ -707,6 +713,7 @@ a {
   .accordion-button::after {
     max-width: 15px;
   }
+
   /* YOUR WORLD GAME BOARD SLIDER */
   .world-game-img-title {
     font-size: 20px;
@@ -747,6 +754,7 @@ a {
   .accordion-button::after {
     max-width: 10x;
   }
+
 /* YOUR WORLD GAME BOARD SLIDER */
   .world-game-img-title {
     font-size: 18px;
