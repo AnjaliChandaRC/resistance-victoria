@@ -47,6 +47,8 @@ $('.world-game-slider').slick({
   dots: true,
   infinite: true,
   speed: 1000,
+  nextArrow: ".prev",
+  prevArrow: ".next",
   slidesToShow: 1,
   slidesToScroll: 1,
   centerMode: true,
